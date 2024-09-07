@@ -1,0 +1,18 @@
+<section class="mt-1 mb-4">
+    <h2 class="">Brands:</h2>
+
+    <div class="row g-3">
+      @for (brand of brandsList.slice(0,12); track brand._id) {
+        <div class="col-md-2">
+            <div [routerLink]="['/detailsBrand',brand._id]" class="product p-2">
+                <img [src]="brand.image"  height="250px" class="w-100" [alt]="brand.name">
+               
+            </div>
+            
+        </div>
+            
+      }
+    </div>
+
+
+</section>

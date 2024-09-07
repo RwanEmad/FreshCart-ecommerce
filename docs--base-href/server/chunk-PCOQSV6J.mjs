@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Gb as a,Ob as s,aa as o,pb as r,qb as i}from"./chunk-XCB6WECV.mjs";import"./chunk-VVCT4QZE.mjs";var m=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-products"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,c){n&1&&(r(0,"p"),a(1,"products works!"),i())}});let t=e;return t})();export{m as ProductsComponent};

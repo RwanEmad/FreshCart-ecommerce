@@ -1,0 +1,45 @@
+<section class="mt-1 mb-4">
+    <h2 class="">Pobular Products:</h2>
+
+   
+    <div class="row g-3">
+      @for (favProduct of favourites ; track $index) {
+      
+          <div class="col-md-2">
+            <div class="product p-2 position-relative" >
+               <div [routerLink]="['/details',favProduct.id]">
+                <img [src]="favProduct.imageCover" class="w-100" [alt]="favProduct.title">
+                <h3 class="small text-main">{{favProduct.category.name }}</h3>
+                <h4 class="h6">{{favProduct.title | termText :2 | uppercase}}</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>{{favProduct.price | currency:'GBP'}}</span>
+
+                    <div >
+                        
+                        @for (num of [1,2,3,4,5].slice(0,favProduct.ratingsAverage); track $index) {
+                            
+                            <span ><i class="fas fa-star rating-color"></i>
+                               
+                            </span>
+                            
+                           
+                        } @if (favProduct.ratingsAverage % 1!=0) {
+                                <span [ngStyle]="{'background':generateGradient((favProduct.ratingsAverage%1)*100),'color':'transparent','background-clip':'text'}"><i class="fas fa-star" ></i></span>
+                             }
+                      
+                        <span class="text-muted">{{favProduct.ratingsAverage}}</span>
+                    </div>
+                </div>
+               </div>
+                <button class="btn-main w-100" (click)="addCart(favProduct.id)">Add to Cart</button>
+               
+                <span class="position-absolute top-0 end-0 p-2" (click)="toggleWishList(favProduct)"><i [ngClass]="[isInWishList(favProduct,favourites)?'fa-solid':'fa-regular',isInWishList(favProduct,favourites)?'text-danger':'']"  class="fa-heart  fa-xl cr"></i></span>
+
+            </div>
+           <!-- <i class="fa-solid fa-heart"></i> -->
+        </div>
+        } 
+   
+   </div>  
+            
+</section>

@@ -1,0 +1,40 @@
+{
+    "navbar":{
+        "home":"الرئيسيه",
+        "products":"المنتجات",
+        "categories":"الأقسام",
+        "brands":"العلامات التجاريه",
+        "signout":"تسجيل الخروج",
+        "lang":"غ",
+        "en":"الانجلزيه",
+        "ar":"العربيه"
+    },
+    "homebody":{
+       " Pobular Categories":"الأقسام الأشهر",
+       "Pobular Products":"المنتجات الأكثر طلبا",
+       "Search by Name":"بحث "
+
+    },
+    "footer":{
+        "Get The FreshCart App":"FreshCart أحصل على تطبيق ",
+        "We Will Send You a Link, Open it on Your Phone to download the app":"سوف يصلك الرابط ,افتح هاتفك لتنزيل التطبيق",
+        "Email":"البريد الألكتروني",
+        "Share App Link":"مشاركة رابط التطبيق",
+        "Payment partners":"طرق الدفع"
+    },
+    "cart":{
+       "Shop Cart":"سلة المشتريات",
+       "Total Cart Price":"المباغ الاجمالي",
+       "Clear Cart":"الغاء",
+       "Orders":"تأكيد"
+    },
+    "orders":{
+        "Shipping Address":"العنوان",
+        "Details":"التفاصل",
+        "Phone":"رقم التليفون",
+        "City":"المدينه",
+        "Check Out":"شراء"
+    }
+   
+
+}

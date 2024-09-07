@@ -1,0 +1,25 @@
+<section class="mt-1 mb-4">
+    <h2 class="mb-2">Order History:</h2>
+    <div class="row g-3">
+      @for (order of ordersList; track order.id) {
+      
+          <div class="col-md-12">
+            <div class="product p-2 position-relative" >
+               <div >
+                <h3 class="small text-main">placed : {{order.createdAt | date }}</h3>
+                <h4 class="h6">Order # {{order.id }}</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>Total Price {{order.totalOrderPrice | currency:'GBP'}}</span>
+                </div>
+            </div>
+
+            </div>
+             
+            </div>
+           <!-- <i class="fa-solid fa-heart"></i> -->
+       
+        } 
+   
+   </div>  
+            
+</section>
